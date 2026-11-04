@@ -34,7 +34,7 @@ Plataforma web para administrar un catálogo de productos.
 
 ```
 git clone https://github.com/MayKerPrim/prueba-tecnica-dev.git
-cd prueba-tecnica
+cd prueba-tecnica-dev
 ```
 
 ### 2. Backend
@@ -47,7 +47,7 @@ python -m venv venv
 Si es Windows, utilizar:
 
 ```powershell
-venv\Scripts\activate.ps1
+.\venv\Scripts\activate
 ```
 
 Si tiene macOS/Linux, utilizar:
@@ -56,11 +56,17 @@ Si tiene macOS/Linux, utilizar:
 source venv/bin/activate
 ```
 
+Luego:
+
+```powershell
+pip install -r requirements.txt
+```
+
 Crear `.env` a partir de `.env.example`.
 
 ## Base de datos
 
-Crear una base de datos PostgreSQL llamada `tienda-db`.
+Crear una base de datos PostgreSQL llamada `catalogo-db`.
 
 Configurar las credenciales en `.env`.
 
